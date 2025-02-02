@@ -1,0 +1,153 @@
+{
+    "info": {
+        "name": "Customer API Test Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Customer with 10 Locations",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"Customer1\",\n  \"email\": \"customer1@example.com\",\n  \"locations\": [\n    {\"city\": \"City1\", \"latitude\": 0, \"longitude\": 0},\n    {\"city\": \"City2\", \"latitude\": 1, \"longitude\": 1},\n    {\"city\": \"City3\", \"latitude\": 2, \"longitude\": 2},\n    {\"city\": \"City4\", \"latitude\": 3, \"longitude\": 3},\n    {\"city\": \"City5\", \"latitude\": 4, \"longitude\": 4},\n    {\"city\": \"City6\", \"latitude\": 5, \"longitude\": 5},\n    {\"city\": \"City7\", \"latitude\": 6, \"longitude\": 6},\n    {\"city\": \"City8\", \"latitude\": 7, \"longitude\": 7},\n    {\"city\": \"City9\", \"latitude\": 8, \"longitude\": 8},\n    {\"city\": \"City10\", \"latitude\": 9, \"longitude\": 9}\n  ]\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/customers",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "customers"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Customer with 20 Locations",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"Customer2\",\n  \"email\": \"customer2@example.com\",\n  \"locations\": [\n    {\"city\": \"City1\", \"latitude\": 0, \"longitude\": 0},\n    {\"city\": \"City2\", \"latitude\": 1, \"longitude\": 1},\n    {\"city\": \"City3\", \"latitude\": 2, \"longitude\": 2},\n    {\"city\": \"City4\", \"latitude\": 3, \"longitude\": 3},\n    {\"city\": \"City5\", \"latitude\": 4, \"longitude\": 4},\n    {\"city\": \"City6\", \"latitude\": 5, \"longitude\": 5},\n    {\"city\": \"City7\", \"latitude\": 6, \"longitude\": 6},\n    {\"city\": \"City8\", \"latitude\": 7, \"longitude\": 7},\n    {\"city\": \"City9\", \"latitude\": 8, \"longitude\": 8},\n    {\"city\": \"City10\", \"latitude\": 9, \"longitude\": 9},\n    {\"city\": \"City11\", \"latitude\": 10, \"longitude\": 10},\n    {\"city\": \"City12\", \"latitude\": 11, \"longitude\": 11},\n    {\"city\": \"City13\", \"latitude\": 12, \"longitude\": 12},\n    {\"city\": \"City14\", \"latitude\": 13, \"longitude\": 13},\n    {\"city\": \"City15\", \"latitude\": 14, \"longitude\": 14},\n    {\"city\": \"City16\", \"latitude\": 15, \"longitude\": 15},\n    {\"city\": \"City17\", \"latitude\": 16, \"longitude\": 16},\n    {\"city\": \"City18\", \"latitude\": 17, \"longitude\": 17},\n    {\"city\": \"City19\", \"latitude\": 18, \"longitude\": 18},\n    {\"city\": \"City20\", \"latitude\": 19, \"longitude\": 19}\n  ]\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/customers",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "customers"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Customer with 4 Locations",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"Customer3\",\n  \"email\": \"customer3@example.com\",\n  \"locations\": [\n    {\"city\": \"City1\", \"latitude\": 0, \"longitude\": 0},\n    {\"city\": \"City2\", \"latitude\": 1, \"longitude\": 1},\n    {\"city\": \"City3\", \"latitude\": 2, \"longitude\": 2},\n    {\"city\": \"City4\", \"latitude\": 3, \"longitude\": 3}\n  ]\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/customers",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "customers"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Update Customer with 4 Locations",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"id\": 1,\n  \"name\": \"Customer1 Updated\",\n  \"email\": \"customer1updated@example.com\",\n  \"locations\": [\n    {\"city\": \"City1\", \"latitude\": 0, \"longitude\": 0},\n    {\"city\": \"City2\", \"latitude\": 1, \"longitude\": 1},\n    {\"city\": \"City3\", \"latitude\": 2, \"longitude\": 2},\n    {\"city\": \"City4\", \"latitude\": 3, \"longitude\": 3}\n  ]\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/customers/1",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "customers",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Update Customer with 20 Locations",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"id\": 1,\n  \"name\": \"Customer1 Updated\",\n  \"email\": \"customer1updated@example.com\",\n  \"locations\": [\n    {\"city\": \"City1\", \"latitude\": 0, \"longitude\": 0},\n    {\"city\": \"City2\", \"latitude\": 1, \"longitude\": 1},\n    {\"city\": \"City3\", \"latitude\": 2, \"longitude\": 2},\n    {\"city\": \"City4\", \"latitude\": 3, \"longitude\": 3},\n    {\"city\": \"City5\", \"latitude\": 4, \"longitude\": 4},\n    {\"city\": \"City6\", \"latitude\": 5, \"longitude\": 5},\n    {\"city\": \"City7\", \"latitude\": 6, \"longitude\": 6},\n    {\"city\": \"City8\", \"latitude\": 7, \"longitude\": 7},\n    {\"city\": \"City9\", \"latitude\": 8, \"longitude\": 8},\n    {\"city\": \"City10\", \"latitude\": 9, \"longitude\": 9},\n    {\"city\": \"City11\", \"latitude\": 10, \"longitude\": 10},\n    {\"city\": \"City12\", \"latitude\": 11, \"longitude\": 11},\n    {\"city\": \"City13\", \"latitude\": 12, \"longitude\": 12},\n    {\"city\": \"City14\", \"latitude\": 13, \"longitude\": 13},\n    {\"city\": \"City15\", \"latitude\": 14, \"longitude\": 14},\n    {\"city\": \"City16\", \"latitude\": 15, \"longitude\": 15},\n    {\"city\": \"City17\", \"latitude\": 16, \"longitude\": 16},\n    {\"city\": \"City18\", \"latitude\": 17, \"longitude\": 17},\n    {\"city\": \"City19\", \"latitude\": 18, \"longitude\": 18},\n    {\"city\": \"City20\", \"latitude\": 19, \"longitude\": 19}\n  ]\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/customers/1",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "customers",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Customer Locations",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/customers/1/locations",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "customers",
+                        "1",
+                        "locations"
+                    ]
+                }
+            }
+        }
+    ]
+}
